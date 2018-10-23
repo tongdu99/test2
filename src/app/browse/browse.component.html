@@ -1,0 +1,11 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Browse"></Label>
+</ActionBar>
+
+<GridLayout> 
+        <Image src="https://www.cpp.edu/~library/about/about-the-library/library-floor-maps/images/Online-Maps_2ND%20Floor.png"></Image>
+        <AbsoluteLayout>
+            <Label top="{{icon_y}}" left="{{icon_x}}" class="fa" text="&#xf041;" style="background-color: aqua"></Label>
+            <Label *ngFor="let item of itemList" [top]="item.y" [left]="item.x"  [text]="item.text" style="color:white;font-size:32; background-color: blue; border-width: 4;border-color: black"></Label>
+        </AbsoluteLayout>
+</GridLayout>
